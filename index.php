@@ -10,13 +10,23 @@
 
     <?php
 
-        $badwords = $_GET['badwords']
+       
         
+
+        $mia_stringa = "Ciao Ernesto, benvenuto sul nostro sito";
+
+        $lunghezza_mia_stringa = strlen($mia_stringa);
         
+        $badwords = $_GET['badwords'];
+        
+        $sostituzione = str_replace('Ernesto', $badwords, $mia_stringa);
 
 
     ?>
-    <p>Ciao <?php echo $badwords; ?>, benvenuto sul nostro sito</p>
+
+    <p><?php echo $mia_stringa; ?></p>
+    <p><?php echo $lunghezza_mia_stringa; ?></p>
+    
 
 </body>
 </html>
